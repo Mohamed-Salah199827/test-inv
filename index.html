@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engagement Invitation</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="background d-flex justify-content-center align-items-center min-vh-100">
+    <div class="invite-container text-center">
+        
+        <h1 class="display-5 mb-3">You're Invited to Our Engagement!</h1>
+        <p>We are thrilled to share our joy and celebrate our engagement with you.</p>
+        <h2 class="mb-3">Mohamed & Esraa</h2>
+        <p>Date: Monday, December 2, 2024</p>
+        <p>Venue: Royal Complex Halls</p>
+        <div>
+            <a href="https://maps.app.goo.gl/uz5jhhCERyT7Sh9a7" target="_blank" class="btn btn-outline-light mt-2">Get Location</a>
+        </div>
+        
+        <button class="btn btn-custom mt-4" onclick="showDetails()">View Details</button>
+
+        <div id="details" class="mt-3" style="display:none;">
+            <p>Location: Alexandria - Dekheila</p>
+            <p>Time: 7:00 PM</p>
+            <p>Please join us in making this day unforgettable.</p>
+        </div>
+
+        <!-- Message form -->
+        <div class="mt-5">
+            <h4>Send Us a Message</h4>
+            <form id="messageForm" onsubmit="sendMessage(event)">
+                <div class="mb-3">
+                    <input type="text" class="form-control" id="guestName" placeholder="Your Name" required>
+                </div>
+                <div class="mb-3">
+                    <textarea class="form-control" id="message" rows="3" placeholder="Write your message here" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-custom">Send Message</button>
+            </form>
+            <p id="responseMessage" class="mt-3"></p>
+        </div>
+    </div>
+</div>
+<script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+/* Reset styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+body {
+    background-color: #f8f9fa;
+}
+
+.background {
+    background-image: url("tuan-nguy-n-minh-pGr7g4l8EOI-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5vh;
+}
+
+.invite-container {
+    color: white;
+    max-width: 700px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Custom button styling */
+.btn-custom {
+    background-color: #bc0f43;
+    color: #fff;
+}
+
+.btn-custom:hover {
+    background-color: #fff;
+    color: #bc0f43;
+    border: 1px solid #bc0f43;
+}
+
+.header-image,
+.footer-image {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .invite-container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .display-5 {
+        font-size: 1.75rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .background {
+        padding: 3vh;
+    }
+}
+
+@media (max-width: 576px) {
+    .display-5 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.25rem;
+    }
+
+    .btn-custom, .btn-outline-light {
+        font-size: 0.9rem;
+    }
+}
