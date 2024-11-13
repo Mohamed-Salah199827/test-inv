@@ -11,14 +11,15 @@ body {
 }
 
 .background {
-    background-image: url("tuan-nguy-n-minh-pGr7g4l8EOI-unsplash.jpg");
+    background-image: url("973011a325c2117b3e5ff757eac0d619.jpg");
     background-size: cover;
     background-position: center;
-    width: 100%;
+    width: fit-content;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 5vh;
+    padding: 8vh;
+    margin: auto;
 }
 
 .invite-container {
