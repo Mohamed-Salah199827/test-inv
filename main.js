@@ -10,7 +10,7 @@ async function sendMessage(event) {
     const responseMessage = document.getElementById('responseMessage');
 
     try {
-        const response = await fetch('https://app.reyadabusiness.com/laravel-test/public/api/sendMassage', { // عدل رابط الـAPI هنا
+        const response = await fetch('https://app.reyadabusiness.com/laravel-test/public/api/createMassage', { // عدل رابط الـAPI هنا
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
